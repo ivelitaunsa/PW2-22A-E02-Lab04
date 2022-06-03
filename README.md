@@ -75,8 +75,11 @@
 -   ¿Para qué sirve el directorio pycache?<br>
     Es importante debido a que es la carpeta donde se guardan los archivos .pyc, que permiten hacer que la ejecución
     de los módulos sea mayor
--   ¿Cuáles son los usos y lo que representa el subguión en Python?
-    
+-   ¿Cuáles son los usos y lo que representa el subguión en Python?<br>
+    Los usos del subguión(_) en Python vistos hasta se utilizan en la creación de clases, definiendo al constructor
+    o en el nombre de la carpeta __pycache__.
+    Sin embargo existen  otras aplicaciones, como por ejemplo para evitar conflictos con las palabras clave de Python
+    class_='Classname', tambien están los métodos Dunder (reservados para uso especial) y los Naame Mangling
         
 </ul>
 <tr><td>III. CONCLUSIONES<br><br>
