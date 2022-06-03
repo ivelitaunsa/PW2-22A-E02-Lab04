@@ -66,7 +66,13 @@
 <tr><td>II. SOLUCIÓN DEL CUESTIONARIO<br><br>
 <ul>
     <li>¿Qué son los archivos *.pyc?</li>
+        Tambien denominado como "Compyled Python File", es donde Python almacena la versión compilada de cada módulo,
+        con el fin de acelerar la velocidad de carga de los módulos.
+        <p><code>module.version.pyc</code></p>
+        
+    
     <li>¿Para qué sirve el directorio pycache?</li>
+        
     <li>¿Cuáles son los usos y lo que representa el subguión en Python?</li>
 </ul>
 <tr><td>III. CONCLUSIONES<br><br>
