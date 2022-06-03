@@ -34,7 +34,10 @@ class Picture:
   def up(self, p):
       upPict = []
       for value in p.img:
-    return Picture(None)
+          upPict.append(value)
+      for value in self.img:
+          upPict.append(value)
+    return Picture(upPict)
 
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
