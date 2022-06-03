@@ -37,6 +37,10 @@ class Picture:
     result = []
     upperIMG = p.img
     underIMG = self.img
+    for i in range(len(upperIMG)):
+        txt = ""
+        for j in range(len(upperIMG)):
+
     return Picture(None)
   
   def horizontalRepeat(self, n):
