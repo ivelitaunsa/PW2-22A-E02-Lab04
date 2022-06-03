@@ -58,10 +58,22 @@ class Picture:
   def horizontalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual al costado
         la cantidad de veces que indique el valor de n """
-    return Picture(None)
+    repeat = self.img
+    funcConcatenar = lambda a, b : a + b
+    i = 0
+    while i < n:
+        repeat = map(funcConcatenar, repeat, self.img)
+        i += 1
+    return Picture(list(repeat))
+    
 
   def verticalRepeat(self, n):
-    return Picture(None)
+    repeat = self.img
+    i = 0
+    while i < n:
+        repeat = repeat + self.img
+        i += 1
+    return Picture(repeat)
 
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
