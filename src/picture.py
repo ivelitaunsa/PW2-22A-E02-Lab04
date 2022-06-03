@@ -37,19 +37,19 @@ class Picture:
     return Picture(negative)
 
   def join(self, p):
-      joinRslt = []
-      i = 0
-      while i<len(self.img):
-          joinRslt.append(self.img[i] + p[i])
-          i+=1
+    joinRslt = []
+    i = 0
+    while i<len(self.img):
+      joinRslt.append(self.img[i] + p[i])
+      i+=1
     return Picture(joinRslt)
 
   def up(self, p):
-      upPict = []
-      for value in p.img:
-          upPict.append(value)
-      for value in self.img:
-          upPict.append(value)
+    upPict = []
+    for value in p.img:
+      upPict.append(value)
+    for value in self.img:
+      upPict.append(value)
     return Picture(upPict)
 
   def under(self, p):
