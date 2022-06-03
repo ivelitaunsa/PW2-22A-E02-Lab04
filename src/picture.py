@@ -40,6 +40,8 @@ class Picture:
     for i in range(len(upperIMG)):
         txt = ""
         for j in range(len(upperIMG)):
+            if upperIMG[i][j] != underIMG[i][j] and upperIMG[i][j] != "":
+                txt += upperIMG[i][j]
 
     return Picture(None)
   
