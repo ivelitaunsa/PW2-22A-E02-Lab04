@@ -41,7 +41,12 @@ class Picture:
         la cantidad de veces que indique el valor de n """
     repeat = self.img
     funcConcatenar = lambda a, b : a + b
-    return Picture(None)
+    i = 0
+    while i < n:
+        repeat = map(funcConcatenar, repeat, self.img)
+        i += 1
+    return Picture(repeat)
+    
 
   def verticalRepeat(self, n):
     return Picture(None)
