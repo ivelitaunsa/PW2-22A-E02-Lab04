@@ -32,6 +32,8 @@ class Picture:
     return Picture(joinRslt)
 
   def up(self, p):
+      upPict = []
+      for value in p.img:
     return Picture(None)
 
   def under(self, p):
