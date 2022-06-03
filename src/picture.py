@@ -49,6 +49,8 @@ class Picture:
     
 
   def verticalRepeat(self, n):
+    repeat = self.img
+    i = 0
     return Picture(None)
 
   #Extra: Sólo para realmente viciosos 
