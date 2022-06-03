@@ -13,15 +13,28 @@ class Picture:
 
   def verticalMirror(self):
     """ Devuelve el espejo vertical de la imagen """
-    return Picture(None)
+    vertical = []
+    for value in self.img:
+      vertical.append(value[::-1])
+    return Picture(vertical)
 
   def horizontalMirror(self):
     """ Devuelve el espejo horizontal de la imagen """
-    return Picture(None)
+    horizontal = []
+    for value in self.img:
+      horizontal.insert(0,value) 
+    return Picture(horizontal)
 
   def negative(self):
     """ Devuelve un negativo de la imagen """
-    return Picture(None)
+    negative = []
+    for value in self.img:
+      valueNeg = ""
+      for caracter in value:
+        valueNeg += self._invColor(caracter)
+      negative.append(valueNeg)
+
+    return Picture(negative)
 
   def join(self, p):
       joinRslt = []
