@@ -45,7 +45,7 @@ class Picture:
     while i < n:
         repeat = map(funcConcatenar, repeat, self.img)
         i += 1
-    return Picture(repeat)
+    return Picture(list(repeat))
     
 
   def verticalRepeat(self, n):
