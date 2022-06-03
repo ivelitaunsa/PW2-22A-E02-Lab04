@@ -40,7 +40,7 @@ class Picture:
     joinRslt = []
     i = 0
     while i<len(self.img):
-      joinRslt.append(self.img[i] + p[i])
+      joinRslt.append(self.img[i] + p.img[i])
       i+=1
     return Picture(joinRslt)
 
