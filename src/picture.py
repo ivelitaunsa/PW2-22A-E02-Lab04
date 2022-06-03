@@ -42,8 +42,10 @@ class Picture:
         for j in range(len(upperIMG)):
             if upperIMG[i][j] != underIMG[i][j] and upperIMG[i][j] != "":
                 txt += upperIMG[i][j]
-
-    return Picture(None)
+            else:
+                txt += underIMG[i][j]
+        result.append(txt)
+    return Picture(result)
   
   def horizontalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual al costado
