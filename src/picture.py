@@ -39,6 +39,8 @@ class Picture:
   def horizontalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual al costado
         la cantidad de veces que indique el valor de n """
+    repeat = self.img
+    funcConcatenar = lambda a, b : a + b
     return Picture(None)
 
   def verticalRepeat(self, n):
