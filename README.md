@@ -137,7 +137,43 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
     (my_env)
     pip install -r requirements.txt
     ```
+* Cada uno tenia la tarea de implementar las funciones usando la lógica basada en listas y strings
+    * Franco
+        1. verticalMirror()
+        2. horizontalMirror()
+        3. negative()
+    * Barbara <!--Dejar el espacio de abajo-->
 
+        4. join(Picture)
+        5. up(Picture)
+    * Bryan <!--Dejar el espacio de abajo-->
+
+        6. under(Picture)
+
+    * Eberth <!--Dejar el espacio de abajo-->
+
+        7. horizontalRepeat(n)
+        8. verticalRepeat(n)
+    * Italo
+
+        9. rotate()
+            * Primero creamos el tamaño de la lista
+                ```python
+                # Creating all elements of the list
+                for value in self.img[0]:
+                  rotate.append(value)
+                ```
+            * Aprovechando lo dicho anteriormente que los [strings son arrays](https://www.w3schools.com/python/python_strings.asp)
+                ```python
+                i=1; j=0
+                while i<len(self.img):
+                  while j<len(self.img[i]):
+                    rotate[j] = self.img[i][j] + rotate[j]
+                    j+=1
+                  j=0
+                  i+=1
+                ```
+    
 ---
 
 II. SOLUCIÓN DEL CUESTIONARIO
