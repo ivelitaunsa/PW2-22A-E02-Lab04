@@ -200,7 +200,49 @@ II. SOLUCIÓN DEL CUESTIONARIO
 III. CONCLUSIONES
 
 ---
+IV. RECOMENDACIONES
+* Debido a que los participantes tienen unas diferencias en los Sistemas operativos no es posible introducir la carpeta src dentro del entorno virtual
+    ```sh
+    my_env
+    ├── bin
+    ├── lib
+    │   └── python3.9
+    ├── pyvenv.cfg
+    └── src
+    ```
+* Por lo que el entorno virtual y el directorio src estaran en el mismo orden
+    ```sh
+    PW2-22A-E02-Lab04
+    ├── src
+    └── my_env
+        ├── bin
+        ├── lib
+        │   └── python3.9
+        └── pyvenv.cfg
+    ```
+* Aún asi el contenido de uno de los archivos pyenv.cfg se colocará aquí
+    ```ini
+    home = C:\Users\IFBVA2002\AppData\Local\Programs\Python\Python310
+    implementation = CPython
+    version_info = 3.10.4.final.0
+    virtualenv = 20.14.1
+    include-system-site-packages = false
+    base-prefix = C:\Users\IFBVA2002\AppData\Local\Programs\Python\Python310
+    base-exec-prefix = C:\Users\IFBVA2002\AppData\Local\Programs\Python\Python310
+    base-executable = C:\Users\IFBVA2002\AppData\Local\Programs\Python\Python310\python.exe
+    ```
+* Con respecto al .gitignore este debe ignorar la carpeta del entorno virtual, la carpeta __pycache __ y los archivos .pyc
+    ```ini
+    # .gitignore content
+    # Virtual enviroment
+    /my_env
+    # Pychache
+    __pycache__
+    # pyc archives
+    *.pyc
+    ```
 
+---
 ## RETROALIMENTACIÓN GENERAL
 
 ---
