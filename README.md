@@ -140,14 +140,25 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
 * Cada uno tenia la tarea de implementar las funciones usando la lógica basada en listas y strings
     * Franco
         1. verticalMirror()
-             * Primero creamos una lista 
+             * Creamos una lista (vertical) para almacenar cadenas invertidas
                  ```python
                     # stores inverted strings in list
                     for value in self.img:
                       vertical.append(value[::-1])
                  ```
-        3. horizontalMirror()
-        4. negative()
+        2. horizontalMirror()
+             * Colocamos lineas del final al inicio en lista (horizontal)
+                 ```python
+                    # put trailing lines at the beginning
+                    for value in self.img:
+                      horizontal.insert(0,value)
+                 ```        
+        3. negative()
+             * Reemplazo caracter por caracter, concateno y almaceno lista(negative)
+                 ```python
+                    text += self._invColor(color)
+                 ```
+
     * Barbara <!--Dejar el espacio de abajo-->
 
         4. join(Picture)
