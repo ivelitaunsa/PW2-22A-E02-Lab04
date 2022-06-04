@@ -79,18 +79,75 @@
 
 ---
 
-I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS
+I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
+* Originalmente la carpeta tiene los siguientes archivos
+    ```sh
+    ├── README.md
+    ├── requirements.txt
+    └── src
+        ├── Ejercicio2a.py
+        ├── Ejercicio2b.py
+        ├── Ejercicio2c.py
+        ├── Ejercicio2d.py
+        ├── Ejercicio2e.py
+        ├── Ejercicio2f.py
+        ├── Ejercicio2g.py
+        ├── chessPictures.py
+        ├── colors.py
+        ├── interpreter.py
+        ├── picture.py
+        └── pieces.py
+    ```
+* Sin embargo para poder empezar a trabajar necesitamos instalar el virtual enviroment en otra carpeta aparte en este mismo directorio, la carpeta debe ser llamada "my_env"
+    ```sh
+    virtualenv -p python my_env
+    ```
+* Quedara de la siguiente manera
+    ```sh
+    ├── README.md
+    ├── my_env
+    │   ├── Lib
+    │   ├── Scripts
+    │   ├── include
+    │   └── pyvenv.cfg
+    ├── requirements.txt
+    └── src
+        ├── Ejercicio2a.py
+        ├── Ejercicio2b.py
+        ├── Ejercicio2c.py
+        ├── Ejercicio2d.py
+        ├── Ejercicio2e.py
+        ├── Ejercicio2f.py
+        ├── Ejercicio2g.py
+        ├── chessPictures.py
+        ├── colors.py
+        ├── interpreter.py
+        ├── picture.py
+        └── pieces.py
+    ```
+* Tenemos que instalar pygame dentro del entorno virtual con el archivo requirements.txt
+    ```sh
+    # On linux
+    source ./my_env/bin/activate
+
+    # On Windows
+    .\my_env\Scripts\activate
+    ```
+    ```sh
+    (my_env)
+    pip install -r requirements.txt
+    ```
 
 ---
 
 II. SOLUCIÓN DEL CUESTIONARIO
 
-<!-- Listas -->
+<!-- Listas puedes usar "-", "+", "*" -->
 * ¿Qué son los archivos *.pyc?
     * Tambien denominado como "Compyled Python File", es donde Python almacena la versión compilada de cada módulo, con el fin de acelerar la velocidad de carga de los módulos.
-    ```sh
-    module.version.pyc
-    ```
+        ```sh
+        module.version.pyc
+        ```
 <br>
 
 * ¿Para qué sirve el directorio pycache?
