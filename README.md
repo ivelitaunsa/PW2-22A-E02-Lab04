@@ -142,21 +142,21 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
         1. verticalMirror()
              * Creamos una lista (vertical) para almacenar cadenas invertidas
                  ```python
-                    # stores inverted strings in list
-                    for value in self.img:
-                      vertical.append(value[::-1])
+                 # stores inverted strings in list
+                 for value in self.img:
+                   vertical.append(value[::-1])
                  ```
         2. horizontalMirror()
              * Colocamos lineas del final al inicio en lista (horizontal)
                  ```python
-                    # put trailing lines at the beginning
-                    for value in self.img:
-                      horizontal.insert(0,value)
+                 # put trailing lines at the beginning
+                 for value in self.img:
+                   horizontal.insert(0,value)
                  ```        
         3. negative()
              * Reemplazo caracter por caracter, concateno(en valueNeg) y almaceno lista(negative)
                  ```python
-                    valueNeg += self._invColor(color)
+                 valueNeg += self._invColor(color)
                  ```
 
     * Barbara <!--Dejar el espacio de abajo-->
