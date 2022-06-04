@@ -149,27 +149,26 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
     * Bryan <!--Dejar el espacio de abajo-->
 
         6. under(Picture)
-						*	Primero se declaran las variables necesarias
-                ```python
-								result = []
-      					upperIMG = p.img
-      					underIMG = self.img
-                ```
-						*	Dentro de un bucle anidado se comparan los caracteres de las
-							imagenes, dejando el resultado final
-                ```python
-								if upperIMG[i][j] != underIMG[i][j] and upperIMG[i][j] != " ":
- 									txt += upperIMG[i][j]
-  							else:
-    							txt += underIMG[i][j]
-                ```
-						*	Finalmente ese resultado se agrega a result, para posteriormente
-							enviar el resultado final
-                ```python
-								for i in range(len(upperIMG)):
-									txt = ""
-									...
-									result.append(txt)
+		* Primero se declaran las variables necesarias
+			```python
+			result = []
+			upperIMG = p.img
+			underIMG = self.img
+			```
+		* Dentro de un bucle anidado se comparan los caracteres de las imagenes, dejando el resultado final
+			```python
+			if upperIMG[i][j] != underIMG[i][j] and upperIMG[i][j] != " ":
+			  txt += upperIMG[i][j]
+			else:
+			  txt += underIMG[i][j]
+			```
+		* Finalmente ese resultado se agrega a result, para posteriormente enviar el resultado final
+			```python
+			for i in range(len(upperIMG)):
+			  txt = ""
+			  ...
+			  result.append(txt)
+			```
     * Eberth <!--Dejar el espacio de abajo-->
 
         7. horizontalRepeat(n)
