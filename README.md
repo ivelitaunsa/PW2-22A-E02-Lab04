@@ -140,8 +140,14 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
 * Cada uno tenia la tarea de implementar las funciones usando la lógica basada en listas y strings
     * Franco
         1. verticalMirror()
-        2. horizontalMirror()
-        3. negative()
+             * Primero creamos una lista 
+                 ```python
+                    # stores inverted strings in list
+                    for value in self.img:
+                      vertical.append(value[::-1])
+                 ```
+        3. horizontalMirror()
+        4. negative()
     * Barbara <!--Dejar el espacio de abajo-->
 
         4. join(Picture)
