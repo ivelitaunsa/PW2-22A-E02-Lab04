@@ -154,9 +154,9 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
                       horizontal.insert(0,value)
                  ```        
         3. negative()
-             * Reemplazo caracter por caracter, concateno y almaceno lista(negative)
+             * Reemplazo caracter por caracter, concateno(en valueNeg) y almaceno lista(negative)
                  ```python
-                    text += self._invColor(color)
+                    valueNeg += self._invColor(color)
                  ```
 
     * Barbara <!--Dejar el espacio de abajo-->
