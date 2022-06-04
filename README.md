@@ -166,8 +166,21 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
                   i += 1
                 return Picture(list(repeat))
                 ```
-        9. verticalRepeat(n)
-        
+                
+        8. verticalRepeat(n)
+            * Primero creamos la variable que retornaremos
+                ```python
+                repeat = self.img  
+                ```
+            * Usamos ciclo while para iterar n veces, [unimos las listas](https://www.w3schools.com/python/python_lists_join.asp) usando el operador + y finalmente retornamos la figura
+                ```python
+                i = 0
+                while i < n:
+                  repeat = repeat + self.img
+                  i += 1
+                return Picture(repeat) 
+                ```
+                
     * Italo
 
         9. rotate()
