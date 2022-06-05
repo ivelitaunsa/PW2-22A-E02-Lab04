@@ -118,11 +118,7 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
         ├── Ejercicio2d.py
         ├── Ejercicio2e.py
         ├── Ejercicio2f.py
-<<<<<<< HEAD
         ├── Ejercicio2g.py
-=======
-        ├──Ejercicio2g.py
->>>>>>> origin/bryanhancco
         ├── chessPictures.py
         ├── colors.py
         ├── interpreter.py
@@ -151,12 +147,6 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
                    vertical.append(value[::-1])
                  ```
         2. horizontalMirror()
-             * Colocamos lineas del final al inicio en lista (horizontal)
-                 ```python
-                 # put trailing lines at the beginning
-                 for value in self.img:
-                   horizontal.insert(0,value)
-                 ```        
         3. negative()
              * Reemplazo caracter por caracter, concateno(en valueNeg) y almaceno lista(negative)
                  ```python
@@ -186,9 +176,6 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
     * Bryan <!--Dejar el espacio de abajo-->
 
         6. under(Picture)
-<<<<<<< HEAD
-
-=======
 		* Primero se declaran las variables necesarias
 			```python
 			result = []
@@ -209,7 +196,6 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
 			  ...
 			  result.append(txt)
 			```
->>>>>>> origin/bryanhancco
     * Eberth <!--Dejar el espacio de abajo-->
 
         7. horizontalRepeat(n)
@@ -287,7 +273,6 @@ II. SOLUCIÓN DEL CUESTIONARIO
 III. CONCLUSIONES
 
 ---
-<<<<<<< HEAD
 IV. RECOMENDACIONES
 * Debido a que los participantes tienen unas diferencias en los Sistemas operativos no es posible introducir la carpeta src dentro del entorno virtual
     ```sh
@@ -331,9 +316,6 @@ IV. RECOMENDACIONES
     ```
 
 ---
-=======
-
->>>>>>> origin/bryanhancco
 ## RETROALIMENTACIÓN GENERAL
 
 ---
@@ -343,7 +325,3 @@ IV. RECOMENDACIONES
 <!-- Enlaces -->
 * [https://www.w3schools.com/python/python_reference.asp](https://www.w3schools.com/python/python_reference.asp)
 * [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
-<<<<<<< HEAD
-=======
- 
->>>>>>> origin/bryanhancco
