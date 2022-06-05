@@ -272,8 +272,6 @@ II. SOLUCIÓN DEL CUESTIONARIO
 
 III. CONCLUSIONES
 
----
-IV. RECOMENDACIONES
 * Debido a que los participantes tienen unas diferencias en los Sistemas operativos no es posible introducir la carpeta src dentro del entorno virtual
     ```sh
     my_env
@@ -293,7 +291,7 @@ IV. RECOMENDACIONES
         │   └── python3.9
         └── pyvenv.cfg
     ```
-* Aún asi el contenido de uno de los archivos pyenv.cfg se colocará aquí
+* Aún asi el contenido de uno de los archivos pyvenv.cfg se colocará aquí
     ```ini
     home = C:\Users\IFBVA2002\AppData\Local\Programs\Python\Python310
     implementation = CPython
@@ -314,6 +312,15 @@ IV. RECOMENDACIONES
     # pyc archives
     *.pyc
     ```
+* Sobre python concluimos lo util que es entender como funciona los módulos y como estos pueden conectarse entre si para formar algo más complejo.
+Los módulos serán muy utilizados en futuros projectos cuando se trabaje con frameworks como django.
+
+* Para poder crear el archivo requirement.txt se hizo con el siguiente comando de la terminal (Debe ser hecho dentro del entorno virtual)
+    ```sh
+    (my_env)
+    echo pip freeze > requirements.txt
+    ```
+    * NOTA: pip freeze devuelve una lista con las librerías,sus dependencias acompañadas de la version (No considera las que vienen por defecto en my_env)
 
 ---
 ## RETROALIMENTACIÓN GENERAL
