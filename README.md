@@ -147,6 +147,12 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
                    vertical.append(value[::-1])
                  ```
         2. horizontalMirror()
+            * Colocamos lineas del final al inicio en lista (horizontal)
+                ```python
+                # put trailing lines at the beginning
+                for value in self.img:
+                  horizontal.insert(0,value)
+                ```        
         3. negative()
              * Reemplazo caracter por caracter, concateno(en valueNeg) y almaceno lista(negative)
                  ```python
