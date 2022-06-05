@@ -180,7 +180,34 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
     * Eberth <!--Dejar el espacio de abajo-->
 
         7. horizontalRepeat(n)
+            * Primero creamos la variable que retornaremos y una función anónima [lambda](https://www.w3schools.com/python/python_lambda.asp) para concatenar
+                ```python
+                repeat = self.img
+                funcConcatenar = lambda a, b : a + b  
+                ```
+            * Usamos ciclo while para concatenar las figuras n veces, también usamos la función [map](https://www.w3schools.com/python/ref_func_map.asp) la cual usara la función [lambda](https://www.w3schools.com/python/python_lambda.asp) para concatenar las cadenas de la figura en cada iteración, finalmente convertimos nuestra variable repeat en una lista y retornamos la figura
+                ```python
+                i = 0
+                while i < n:
+                  repeat = map(funcConcatenar, repeat, self.img)
+                  i += 1
+                return Picture(list(repeat))
+                ```
+                
         8. verticalRepeat(n)
+            * Primero creamos la variable que retornaremos
+                ```python
+                repeat = self.img  
+                ```
+            * Usamos ciclo while para iterar n veces, [unimos las listas](https://www.w3schools.com/python/python_lists_join.asp) usando el operador + y finalmente retornamos la figura
+                ```python
+                i = 0
+                while i < n:
+                  repeat = repeat + self.img
+                  i += 1
+                return Picture(repeat) 
+                ```
+                
     * Italo
 
         9. rotate()
