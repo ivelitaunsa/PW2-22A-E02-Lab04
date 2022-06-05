@@ -162,7 +162,19 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
     * Barbara <!--Dejar el espacio de abajo-->
 
         4. join(Picture)
-        5. up(Picture)
+           * Se crea un array que recorre el objto para devolver uno nuevo al lado
+          joinRslt = []
+          i = 0
+          while i<len(self.img):
+          joinRslt.append(self.img[i] + p.img[i])
+          i+=1
+        6. up(Picture)
+           * Se crea un array recorriendo la imagen y creando un objeto nuevo encima
+          upPict = []
+          for value in p.img:
+          upPict.append(value)
+          for value in self.img:
+          upPict.append(value)
     * Bryan <!--Dejar el espacio de abajo-->
 
         6. under(Picture)
